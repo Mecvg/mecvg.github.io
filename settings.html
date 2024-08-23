@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-Y71QM9DR66"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y71QM9DR66");
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title class="cloak">Settings | MacVG</title>
+    <link class="favicon" rel="icon" type="image/x-icon" href="/logo.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="games.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav">
+      <a href="/" class="logo2" style="background-color: transparent">
+        <img src="nav-logo.png" alt="MacVG Logo" />
+      </a>
+      <a href="/new.html" class="nav-link">New</a>
+      <a href="/trending.html" class="nav-link">Trending</a>
+      <a href="/recent.html" class="nav-link">Recent</a>
+      <a href="/featured.html" class="nav-link">Featured</a>
+      <a href="/macboard/" class="nav-link">MacBoard</a>
+      <a href="/settings.html" class="nav-link">Settings</a>
+      <div class="right">
+        <div class="select help-menu">
+          <span class="help-label help-menu">Help</span>
+          <img src="media/caret.svg" class="caret help-menu" id="caret" />
+          <ul id="cats" class="cats help-menu">
+            <a href="https://forms.gle/UpHgbAmLtUPCD5bs8" target="_blank">
+              Feedback
+            </a>
+          </ul>
+        </div>
+        <img src="media/profile.svg" class="profile" id="profile" />
+      </div>
+    </nav>
+    <div class="wrap" style="padding-bottom: 40px" id="wrap">
+      <header class="homeheader">
+        <div class="title" name="Settings">Settings</div>
+        <div
+          class="sub"
+          style="
+            width: 65%;
+            margin-inline: 17.5%;
+            text-align: left;
+            line-height: 30px;
+          "
+        >
+          You can select a cloaker to change the browser tab so teachers won't
+          notice, select the theme you love for a personalized gaming
+          experience, and also set a panic button that when a teacher comes,
+          MacVG will quickly redirect to your desired website!
+        </div>
+      </header>
+      <hr />
+      <section>
+        <h2 style="display: flex; align-items: center; justify-content: center">
+          About:blank Embedder
+        </h2>
+        <p
+          class="sub"
+          style="
+            width: 50%;
+            margin-inline: 25%;
+            margin-bottom: 20px;
+            font-size: 20px;
+          "
+        >
+          Open a website in an about:blank page so it doesn't show up in
+          history!
+          <a href="" id="macvgabout" style="color: var(--link)"
+            >Open MacVG in about:blank</a
+          >
+        </p>
+        <form id="cloaker">
+          <input
+            type="text"
+            id="name5"
+            placeholder="Enter the embed URL here!"
+          />
+          <button onclick="embed()" id="go" type="submit">Go!</button>
+        </form>
+        <h2>Cloaker</h2>
+        <form id="cloaker">
+          <input type="text" id="name" placeholder="Enter tab name here!" />
+          <button onclick="cloaking()" id="go" type="submit">Go!</button>
+        </form>
+        <form action="" id="cloaker">
+          <input
+            type="text"
+            id="name4"
+            placeholder="Enter tab image URL here!"
+          />
+          <button onclick="faviconing()" id="go" type="submit">Go!</button>
+        </form>
+        <form action="" id="clform">
+          <button onclick="google1()" class="clbtn">Google</button>
+          <button onclick="canva1()" class="clbtn">Canva</button>
+          <button onclick="clever1()" class="clbtn">Clever</button>
+          <button onclick="schoology1()" class="clbtn">Schoology</button>
+          <button onclick="newTab1()" class="clbtn">New Tab</button>
+          <button onclick="unCloak()" class="clbtn">Uncloak</button>
+        </form>
+        <h2>Themes</h2>
+        <form action="" id="clform" style="position: relative">
+          <button onclick="dark()" class="clbtn">Dark</button>
+          <button onclick="ddark()" class="clbtn">Deep Dark</button>
+          <button onclick="cyber()" class="clbtn">Cyberpunk</button>
+          <button onclick="light()" class="clbtn">Light</button>
+          <button
+            onclick="holidays()"
+            class="clbtn"
+            style="cursor: not-allowed; background-color: gray"
+          >
+            Holidays
+          </button>
+          <button onclick="create()" class="clbtn" id="custombtn">
+            Custom
+          </button>
+          <div id="custom">
+            <div class="containercustom">
+              <input type="color" name="color1" id="color1" value="#142011" />
+              <label for="color1">Main Color</label>
+            </div>
+            <div class="containercustom">
+              <input type="color" name="color2" id="color2" value="#0c411f" />
+              <label for="color2">Accent Color</label>
+            </div>
+          </div>
+        </form>
+        <h2>Panic Button</h2>
+        <p id="pbdescription">
+          <spam id="current"></spam>
+        </p>
+        <form action="" id="cloaker2">
+          <input type="text" id="name2" placeholder="Set your panic button!" />
+          <button onclick="panic()" id="go2" type="submit">Go!</button>
+        </form>
+        <form action="" id="cloaker2" style="margin-top: 0">
+          <span class="prehold">https://</span>
+          <input
+            type="text"
+            id="name3"
+            placeholder="Enter the panic redirecting link here!"
+          />
+          <button onclick="url()" id="go2" type="submit">Go!</button>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      © 2024 <a href="/">MacWeb</a
+      ><span style="color: black; user-select: none; background-color: black"
+        >MacVG</span
+      >
+      All rights reserved<br />
+      Have fun playing these unblocked fun games!🎮🎮🎮<br
+        style="margin-bottom: 10px"
+      />
+      <a
+        href="https://github.com/Mac-Web/macvg"
+        target="_blank"
+        style="padding-inline: 10px; text-decoration: underline"
+        >GitHub</a
+      >
+      <a
+        href="https://www.youtube.com/channel/UCE2BzeKnoYbaL4B2Iidz2ag"
+        target="_blank"
+        style="padding-inline: 10px; text-decoration: underline"
+        >YouTube</a
+      >
+      <a
+        href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+        target="_blank"
+        style="padding-inline: 10px; text-decoration: underline"
+        >More games!</a
+      >
+    </footer>
+    <script src="app.js"></script>
+    <script>
+      document.getElementById("macvgabout").addEventListener("click", () => {
+        const win = window.open();
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        const iframe = win.document.createElement("iframe");
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.referrerpolicy = "no-referrer";
+        iframe.allow = "fullscreen";
+        iframe.src = window.location.href;
+        win.document.body.appendChild(iframe);
+      });
+      let thing23 = document.getElementById("current");
+      let panicKeys = localStorage.getItem("panic");
+      let href = localStorage.getItem("href");
+      if (panicKeys && href) {
+        thing23.innerHTML =
+          `<div class="panickeys">` +
+          "<div>" +
+          "Current key: " +
+          panicKeys +
+          "</div>" +
+          "<div>" +
+          " Redirecting: " +
+          href +
+          "</div>" +
+          "</div>";
+      } else if (panicKeys) {
+        thing23.innerHTML =
+          `<div class="panickeys">` +
+          "<div>" +
+          "Current key: " +
+          panicKeys +
+          "</div>" +
+          "<div>" +
+          " Redirecting: https://google.com" +
+          "</div>" +
+          "</div>";
+      } else {
+        thing23.innerHTML =
+          `<div class="panickeys">` +
+          "<div>" +
+          "Current key: `" +
+          "</div>" +
+          "<div>" +
+          " Redirecting: https://google.com" +
+          "</div>" +
+          "</div>";
+      }
+      const allForms = document.querySelectorAll("form");
+      allForms.forEach((form) => {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+        });
+      });
+      const urlt = document.getElementById("name5");
+      const urlObj = new window.URL(window.location.href);
+      function embed() {
+        if (
+          !urlt.value.startsWith("https://") &&
+          !urlt.value.startsWith("http://")
+        ) {
+          urlt.value = `https://${urlt.value.split("https://").pop()}`;
+        } else if (urlt.value.startsWith("http://")) {
+          urlt.value = `https://${urlt.value.split("http://").pop()}`;
+        }
+        const win = window.open();
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        const iframe = win.document.createElement("iframe");
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.referrerpolicy = "no-referrer";
+        iframe.allow = "fullscreen";
+        iframe.src = urlt.value;
+        win.document.body.appendChild(iframe);
+      }
+
+      const custom = document.getElementById("custom");
+      const first = document.getElementById("color1");
+      const second = document.getElementById("color2");
+      let custom1 = localStorage.getItem("first");
+      let custom2 = localStorage.getItem("second");
+      if (custom1) {
+        first.value = custom1;
+      }
+      if (custom2) {
+        second.value = custom2;
+      }
+      function create() {
+        custom.style.visibility = "visible";
+        custom.style.opacity = "1";
+        document.addEventListener("click", (e) => {
+          if (
+            e.target.getAttribute("id") != "custombtn" &&
+            e.target != custom &&
+            e.target != first &&
+            e.target != second
+          ) {
+            custom.style.opacity = "0";
+            custom.style.visibility = "hidden";
+            document.documentElement.style.setProperty(
+              "--bg-color",
+              first.value
+            );
+            document.documentElement.style.setProperty(
+              "--bg-color-2",
+              second.value
+            );
+            localStorage.setItem("theme", "custom");
+            localStorage.setItem("first", first.value);
+            localStorage.setItem("second", second.value);
+          } else {
+            custom.style.opacity = "1";
+            custom.style.visibility = "visible";
+          }
+        });
+      }
+      function dark() {
+        localStorage.setItem("theme", null);
+      }
+
+      function ddark() {
+        localStorage.setItem("theme", "deep");
+      }
+
+      function light() {
+        localStorage.setItem("theme", "light");
+      }
+
+      function cyber() {
+        localStorage.setItem("theme", "cyber");
+      }
+    </script>
+  </body>
+</html>
