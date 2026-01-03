@@ -1736,4 +1736,6 @@ document.addEventListener("DOMContentLoaded", function () {
       thing.setAttribute("href", "/");
     }
   });
+  document.getElementsByClassName("more-info")[0].style.display="none"
+
 });
