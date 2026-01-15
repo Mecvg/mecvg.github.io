@@ -1737,5 +1737,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   document.getElementsByClassName("more-info")[0].style.display="none"
-
+const adScript = document.createElement("script");
+adScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5598129470490010";
+adScript.async = true;
+adScript.crossOrigin = "anonymous";
+document.head.appendChild(adScript);
 });
